@@ -8,10 +8,10 @@ Algoritmo ejercicio_3
 	Definir matriz, n, m Como Entero
 	
 	Escribir "Ingrese la cantidad de filas de la matriz: "
-	Leer n
+	Leer m
 	
 	Escribir "Ingrese la cantidad de columnas de la matriz: "
-	Leer m
+	Leer n
 	
 	Dimension matriz[n,m]
 	
@@ -29,9 +29,9 @@ SubProceso llenarMatriz( matriz Por Referencia, n, m )
 	Definir i, j Como Entero
 	
 	// i recorre las filas de la matriz
-	Para i = 0 Hasta n -1 Hacer
+	Para i = 1 Hasta n Hacer
 		// j recorre las columnas de la matriz
-		Para j = 0 Hasta m -1 Hacer
+		Para j = 1 Hasta m Hacer
 			matriz[i,j] = Aleatorio(1, 10) // asigna valores Aleatorios
 		FinPara
 		
@@ -47,9 +47,9 @@ SubProceso mostrarMatriz( matriz Por Referencia, n, m )
 	suma = 0
 	
 	// i recorre las filas de la matriz
-	Para i = 0 Hasta n -1 Hacer
+	Para i = 1 Hasta n Hacer
 		// j recorre las columnas de la matriz
-		Para j = 0 Hasta m -1 Hacer
+		Para j = 1 Hasta m Hacer
 			Escribir Sin Saltar " [" , matriz[i,j] , "]" // Mostramos los valores en las posiciones i,j de la matriz
 			
 			suma = suma + matriz[i,j] // vamos sumando los valores que contiene la matriz
